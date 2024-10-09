@@ -2,7 +2,7 @@ span{
     color: red;
 }
 p{
-    background-color: aquamarine;
+    background-color: aquamarine !important;/* (Give high priority to this text) */
 }
 
 /* This is the multiline comment */

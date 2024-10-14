@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Margin Padding Hight Width Outline</title>
+        <style>
+            * {
+                height: 15px;
+                margin: 0;
+                padding: 0;
+                border: 10px solid rebeccapurple;
+                box-sizing: border-box;
+            }
+            .pbox {
+                margin: 10px;
+                height: 300px;
+                background-color: aqua;
+
+            }
+            .cbox {
+                outline: 2px solid red;
+                outline-offset: 10px;
+                margin: 10px;
+                width: 50%;
+                height: inherit;
+                background-color: rgb(234, 255, 0);
+            }
+            h1 {
+                margin: 0 0 15px 0;
+                padding: 10px;
+            }
+            h2 {
+                margin: 45px 0 0 0;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- <marquee direction="rtl">Hello</marquee> -->
+        <div class="pbox">
+            <div class="cbox"></div>
+        </div>
+        <section>
+            <h1>Hello</h1>
+            <h2>hello</h2>
+        </section>
+    </body>
+</html>

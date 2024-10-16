@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Charmonman|Engagement|Baloo+Bhai|Ubuntu:700|Niconne&display=swap"
+            rel="stylesheet"
+        />
+        <title>Text</title>
+        <style>
+            h1 {
+                color: red;
+                text-align: start; /* left */
+                /* text-align: end; */ /* right */
+                /* text-align: center; */
+                /* text-align: justify; */
+                direction: rtl;
+                unicode-bidi: bidi-override;
+            }
+            p.text {
+                text-align: justify;
+                text-align-last: justify;
+                text-indent: 10%;
+                letter-spacing: 0.05rem;
+                line-height: 112%;
+                /* word-spacing: 50px; */
+                /* white-space: nowrap; */
+            }
+            img.a {
+                vertical-align: baseline;
+            }
+
+            img.b {
+                vertical-align: text-top;
+            }
+
+            img.c {
+                vertical-align: text-bottom;
+            }
+
+            img.d {
+                vertical-align: sub;
+            }
+
+            img.e {
+                vertical-align: super;
+            }
+
+            a {
+                /* text-decoration-line: none; */
+                /* text-decoration-line: overline; */
+                /* text-decoration-line: underline; */
+                /* text-decoration-line: overline underline line-through;
+                text-decoration-color: red;
+                text-decoration-style: wavy;
+                text-decoration-thickness: 50%; */
+                text-decoration: underline red wavy 50%;
+                text-transform: uppercase;
+                /* text-transform: lowercase; */
+                /*  text-transform: capitalize; */
+            }
+            h3 {
+                font-size: 15rem;
+                text-align: center;
+                line-height: 90vh;
+                color: #fcedd8;
+                background: #d52e3f;
+                font-family: "Niconne", cursive;
+                font-weight: 700;
+                text-shadow: 5px 5px 0px #eb452b, 10px 10px 0px #efa032,
+                    15px 15px 0px #46b59b, 20px 20px 0px #017e7f,
+                    25px 25px 0px #052939, 30px 30px 0px #c11a2b,
+                    35px 35px 0px #c11a2b, 40px 40px 0px #c11a2b,
+                    45px 45px 0px #c11a2b;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Text Shadoow</h3>
+        <h1>This the normal text.</h1>
+        <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatibus at inventore quis molestiae totam repellat tenetur in
+            numquam asperiores vel doloremque excepturi quos id atque
+            consequatur, laudantium doloribus quam quia. Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Voluptatibus at inventore quis
+            molestiae totam repellat tenetur in numquam asperiores vel
+            doloremque excepturi quos id atque consequatur, laudantium doloribus
+            quam quia. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatibus at inventore quis molestiae totam repellat tenetur in
+            numquam asperiores vel doloremque excepturi quos id atque
+            consequatur, laudantium doloribus quam quia. Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Voluptatibus at inventore quis
+            molestiae totam repellat tenetur in numquam asperiores vel
+            doloremque excepturi quos id atque consequatur, laudantium doloribus
+            quam quia.
+        </p>
+        <h2>vertical-align: baseline (default):</h2>
+        <p>
+            An <img class="a" src="sqpurple.gif" width="9" height="9" /> image
+            with a default alignment.
+        </p>
+
+        <h2>vertical-align: text-top:</h2>
+        <p>
+            An <img class="b" src="sqpurple.gif" width="9" height="9" /> image
+            with a text-top alignment.
+        </p>
+
+        <h2>vertical-align: text-bottom:</h2>
+        <p>
+            An <img class="c" src="sqpurple.gif" width="9" height="9" /> image
+            with a text-bottom alignment.
+        </p>
+
+        <h2>vertical-align: sub:</h2>
+        <p>
+            An <img class="d" src="sqpurple.gif" width="9" height="9" /> image
+            with a sub alignment.
+        </p>
+
+        <h2>vertical-align: sup:</h2>
+        <p>
+            An <img class="e" src="sqpurple.gif" width="9" height="9" /> image
+            with a super alignment.
+        </p>
+        <a href="sqpurple.gif">This is the link</a>
+    </body>
+</html>

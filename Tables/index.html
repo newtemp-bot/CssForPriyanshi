@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+        <title>Student Table</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Roboto', sans-serif;
+            }
+            h2 {
+                text-align: center;
+                margin: 2rem 0;
+            }
+            .table-div{
+                overflow-x:auto;
+            }
+            body
+            {
+                margin: 0 2rem;
+            }
+            table {
+                min-width: 80%;
+                margin: 0 auto;
+                text-align: center;
+            }
+            table,
+            th,
+            td {
+                border-collapse: collapse;
+            }
+            th
+            {
+                background-color: antiquewhite;
+                font-weight: 500;
+                border-bottom: solid 1px saddlebrown ;
+            }
+            th,
+            td {
+                padding: 0.8rem;
+            }
+            tr:hover{
+                background-color: rgb(250, 250, 250);
+            }
+            tr:nth-child(even)
+            {
+                background-color: rgb(225, 225, 225);
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Student Table</h2>
+        <div class="table-div">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Student ID</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Age</th>
+                        <th>Gender</th>
+                        <th>Class</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1001</td>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>20</td>
+                        <td>Male</td>
+                        <td>12th</td>
+                        <td>john.doe@example.com</td>
+                        <td>123-456-7890</td>
+                    </tr>
+                    <tr>
+                        <td>1002</td>
+                        <td>Jane</td>
+                        <td>Smith</td>
+                        <td>19</td>
+                        <td>Female</td>
+                        <td>11th</td>
+                        <td>jane.smith@example.com</td>
+                        <td>123-456-7891</td>
+                    </tr>
+                    <tr>
+                        <td>1003</td>
+                        <td>James</td>
+                        <td>Johnson</td>
+                        <td>18</td>
+                        <td>Male</td>
+                        <td>10th</td>
+                        <td>james.johnson@example.com</td>
+                        <td>123-456-7892</td>
+                    </tr>
+                    <tr>
+                        <td>1004</td>
+                        <td>Emily</td>
+                        <td>Davis</td>
+                        <td>17</td>
+                        <td>Female</td>
+                        <td>12th</td>
+                        <td>emily.davis@example.com</td>
+                        <td>123-456-7893</td>
+                    </tr>
+                    <tr>
+                        <td>1005</td>
+                        <td>Michael</td>
+                        <td>Brown</td>
+                        <td>21</td>
+                        <td>Male</td>
+                        <td>12th</td>
+                        <td>michael.brown@example.com</td>
+                        <td>123-456-7894</td>
+                    </tr>
+                    <tr>
+                        <td>1006</td>
+                        <td>Sarah</td>
+                        <td>Wilson</td>
+                        <td>22</td>
+                        <td>Female</td>
+                        <td>11th</td>
+                        <td>sarah.wilson@example.com</td>
+                        <td>123-456-7895</td>
+                    </tr>
+                    <tr>
+                        <td>1007</td>
+                        <td>David</td>
+                        <td>Jones</td>
+                        <td>19</td>
+                        <td>Male</td>
+                        <td>12th</td>
+                        <td>david.jones@example.com</td>
+                        <td>123-456-7896</td>
+                    </tr>
+                    <tr>
+                        <td>1008</td>
+                        <td>Lisa</td>
+                        <td>Garcia</td>
+                        <td>18</td>
+                        <td>Female</td>
+                        <td>11th</td>
+                        <td>lisa.garcia@example.com</td>
+                        <td>123-456-7897</td>
+                    </tr>
+                    <tr>
+                        <td>1009</td>
+                        <td>Robert</td>
+                        <td>Miller</td>
+                        <td>20</td>
+                        <td>Male</td>
+                        <td>10th</td>
+                        <td>robert.miller@example.com</td>
+                        <td>123-456-7898</td>
+                    </tr>
+                    <tr>
+                        <td>1010</td>
+                        <td>Jessica</td>
+                        <td>Martinez</td>
+                        <td>17</td>
+                        <td>Female</td>
+                        <td>12th</td>
+                        <td>jessica.martinez@example.com</td>
+                        <td>123-456-7899</td>
+                    </tr>
+                    <tr>
+                        <td>1011</td>
+                        <td>Christopher</td>
+                        <td>Rodriguez</td>
+                        <td>21</td>
+                        <td>Male</td>
+                        <td>11th</td>
+                        <td>christopher.rodriguez@example.com</td>
+                        <td>123-456-7890</td>
+                    </tr>
+                    <tr>
+                        <td>1012</td>
+                        <td>Amy</td>
+                        <td>Martinez</td>
+                        <td>22</td>
+                        <td>Female</td>
+                        <td>12th</td>
+                        <td>amy.martinez@example.com</td>
+                        <td>123-456-7891</td>
+                    </tr>
+                    <tr>
+                        <td>1013</td>
+                        <td>William</td>
+                        <td>Clark</td>
+                        <td>18</td>
+                        <td>Male</td>
+                        <td>10th</td>
+                        <td>william.clark@example.com</td>
+                        <td>123-456-7892</td>
+                    </tr>
+                    <tr>
+                        <td>1014</td>
+                        <td>Linda</td>
+                        <td>Lopez</td>
+                        <td>19</td>
+                        <td>Female</td>
+                        <td>11th</td>
+                        <td>linda.lopez@example.com</td>
+                        <td>123-456-7893</td>
+                    </tr>
+                    <tr>
+                        <td>1015</td>
+                        <td>Daniel</td>
+                        <td>Gonzalez</td>
+                        <td>20</td>
+                        <td>Male</td>
+                        <td>12th</td>
+                        <td>daniel.gonzalez@example.com</td>
+                        <td>123-456-7894</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

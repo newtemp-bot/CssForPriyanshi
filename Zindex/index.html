@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Zindex</title>
+        <style>
+            [class^="box"] {/* Attribute Selectors */
+                width: 200px;
+                height: 200px;
+                position: absolute;
+                text-align: center;
+            }
+            .box1{
+                background-color: aqua;
+                top: 50px;
+                left: 50px;
+            }
+            .box2{
+                background-color: red;
+                top: 100px;
+                left: 100px;
+            }
+            .box3{
+                background-color: rebeccapurple;
+                top: 150px;
+                left: 150px;
+                z-index: 5;
+            }
+            .box4{
+                background-color: cadetblue;
+                top: 200px;
+                left: 200px;
+            }
+            .box5{
+                background-color: yellow;
+                top: 250px;
+                left: 250px;
+                z-index: -5;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+        <div class="box5">5</div>
+    </body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pseudo-class</title>
+        <style>
+            div.btn {
+                width: 10%;
+                line-height: 60px;
+                text-align: center;
+                border-radius: 10px;
+                color: azure;
+                font-weight: bolder;
+                font-family: Helvetica, sans-serif;
+                background-color: rgb(88, 131, 211);
+                cursor: pointer;
+            }
+            div.btn:hover {
+                background-color: cornflowerblue;
+            }
+            p.hs {
+                display: none;
+            }
+            div.container:hover p.hs {
+                display: block;
+            }
+            p:first-child {
+                color: blue;
+            }
+            q:lang(emojj) {
+                quotes: "😂" "😂";
+            }
+            input:focus {
+                color: red;
+            }
+            .image-container {
+                display: flex;
+                gap: 10px;
+            }
+            /* Set initial opacity for all images */
+            .image-container img {
+                opacity: 1;
+                transition: opacity 0.3s ease;
+            }
+
+            /* When hovering over the container, make all non-hovered images fade */
+            .image-container:hover img:not(:hover) {
+                opacity: 0.5;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="btn">Hover Me</div>
+            <p class="hs">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor
+                adipisci temporibus est doloribus iste quo! Saepe perferendis
+                provident sint natus? Accusantium error hic alias dolorum cumque
+                quod, aut magnam fugit. Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit.
+                <q lang="emojj">Dolor adipisci temporibus</q> est doloribus iste
+                quo! Saepe perferendis provident sint natus? Accusantium error
+                hic alias dolorum cumque quod, aut magnam fugit. Lorem, ipsum
+                dolor sit amet consectetur adipisicing elit. Dolor adipisci
+                temporibus est doloribus iste quo! Saepe perferendis provident
+                sint natus? Accusantium error hic alias dolorum cumque quod, aut
+                magnam fugit. Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Dolor adipisci temporibus est doloribus iste
+                quo! Saepe perferendis provident sint natus? Accusantium error
+                hic alias dolorum cumque quod, aut magnam fugit.
+            </p>
+        </div>
+        <p>This is some text.</p>
+        <p>This is some text.</p>
+
+        <div>
+            <p>This is some text.</p>
+            <p>This is some text.</p>
+        </div>
+
+        <input type="text" />
+        <div class="image-container">
+            <img src="https://picsum.photos/200/200" alt="Random Image 1" />
+            <img src="https://picsum.photos/200/200" alt="Random Image 2" />
+            <img
+                src="https://picsum.photos/200/200"
+                alt="Placeholder Image 3"
+            />
+        </div>
+    </body>
+</html>

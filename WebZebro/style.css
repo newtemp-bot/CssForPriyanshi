@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --font-base: 1em/normal "Poppins", sans-serif;
+    --poppins-thin: normal 100 var(--font-base);
+    --poppins-extralight: normal 200 var(--font-base);
+    --poppins-light: normal 300 var(--font-base);
+    --poppins-regular: normal 400 var(--font-base);
+    --poppins-medium: normal 500 var(--font-base);
+    --poppins-semibold: normal 600 var(--font-base);
+    --poppins-bold: normal 700 var(--font-base);
+    --poppins-extrabold: normal 800 var(--font-base);
+    --poppins-black: normal 900 var(--font-base);
+    --poppins-thin-italic: italic 100 var(--font-base);
+    --poppins-extralight-italic: italic 200 var(--font-base);
+    --poppins-light-italic: italic 300 var(--font-base);
+    --poppins-regular-italic: italic 400 var(--font-base);
+    --poppins-medium-italic: italic 500 var(--font-base);
+    --poppins-semibold-italic: italic 600 var(--font-base);
+    --poppins-bold-italic: italic 700 var(--font-base);
+    --poppins-extrabold-italic: italic 800 var(--font-base);
+    --poppins-black-italic: italic 900 var(--font-base);
+}
+
+/* Fonts Class For use */
+.poppins-thin { font: var(--poppins-thin); }
+.poppins-extralight { font: var(--poppins-extralight); }
+.poppins-light { font: var(--poppins-light); }
+.poppins-regular { font: var(--poppins-regular); }
+.poppins-medium { font: var(--poppins-medium); }
+.poppins-semibold { font: var(--poppins-semibold); }
+.poppins-bold { font: var(--poppins-bold); }
+.poppins-extrabold { font: var(--poppins-extrabold); }
+.poppins-black { font: var(--poppins-black); }
+.poppins-thin-italic { font: var(--poppins-thin-italic); }
+.poppins-extralight-italic { font: var(--poppins-extralight-italic); }
+.poppins-light-italic { font: var(--poppins-light-italic); }
+.poppins-regular-italic { font: var(--poppins-regular-italic); }
+.poppins-medium-italic { font: var(--poppins-medium-italic); }
+.poppins-semibold-italic { font: var(--poppins-semibold-italic); }
+.poppins-bold-italic { font: var(--poppins-bold-italic); }
+.poppins-extrabold-italic { font: var(--poppins-extrabold-italic); }
+.poppins-black-italic { font: var(--poppins-black-italic); }
+
+body{
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+    max-width: 100%;
+}
+
+header
+{
+    background-color: rgba(255, 255, 255,0.96);
+    color: #2c2c2c;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,0%);
+    z-index: 1000;
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav{
+    display: flex;
+}
+
+.nav ul{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+
+.signBTN{
+    margin-left: 20px;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
